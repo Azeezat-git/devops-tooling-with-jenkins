@@ -14,4 +14,21 @@ root@ip-172-31-2-181:~# systemctl status jenkins
              └─468 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/>
 ```
 
-### Configuring Jenkins to copy files to NFS server via SSH ###
+### Configuring Jenkins server  to copy files to NFS server via SSH ###
+
+### Console output extract after build ###
+
+```
+Archiving artifacts
+SSH: Connecting from host [ip-172-31-2-181]
+SSH: Connecting with configuration [NFS-SERVER] ...
+SSH: Disconnecting configuration [NFS-SERVER] ...
+SSH: Transferred 1 file(s)
+Finished: SUCCESS
+```
+
+# Voila file copied to /mnt/apps on nfs server
+
+```
+rw-rw-r-- 1 ec2-user ec2-user   617 Jan  5 19:44 jenkins_server.md
+```
