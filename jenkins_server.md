@@ -14,3 +14,4 @@ root@ip-172-31-2-181:~# systemctl status jenkins
              └─468 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/>
 ```
 
+### Configuring Jenkins to copy files to NFS server via SSH ###
